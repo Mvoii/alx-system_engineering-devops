@@ -1,0 +1,1 @@
+pwd bash script
