@@ -1,0 +1,2 @@
+current-dir=$(pwd)
+echo "$current-dir"
