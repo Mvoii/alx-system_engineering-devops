@@ -1,3 +1,2 @@
 #!/bin/bash
-home_dir=$(echo $HOME)
-cd $home_dir
+cd $HOME
