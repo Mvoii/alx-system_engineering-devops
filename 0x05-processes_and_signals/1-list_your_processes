@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays a list of current processes and their PIDs
+
+ps auxf
