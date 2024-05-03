@@ -24,7 +24,7 @@ int infinite_while(void)
  * Return: Always 0.
  */
 
-int main(viod)
+int main(void)
 {
     pid_t pid;
 
