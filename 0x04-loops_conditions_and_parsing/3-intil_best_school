@@ -5,5 +5,5 @@ count=1
 until [ $count -gt 10 ];
 do
   echo "Best School"
-  count=`expr $count + 1`
+  ((count++))
 done
