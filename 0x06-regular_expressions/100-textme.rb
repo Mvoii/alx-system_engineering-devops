@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
 # reex
 
-puts ARGV[0].scan(/\[from:(\+?\w*)\]\s\[to:(\+?\w*)\]\s\[flags:(\S*)\]/).join(',')
+from = ARGV[0].scan(/from:(.*?)\]/)
+to = ARGV[0].scan(/to:(.*?)\]/)
+flags = ARGV[0].scan(/flags:(.*?)\]/)
+puts [from, to, flags].join(',')
