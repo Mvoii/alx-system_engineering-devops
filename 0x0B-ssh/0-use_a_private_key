@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# a script to ssh into a server using a private key
+
+ssh  ubuntu@100.24.242.69 -i ~/.ssh/school
