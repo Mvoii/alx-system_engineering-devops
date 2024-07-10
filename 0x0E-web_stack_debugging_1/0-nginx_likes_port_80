@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# nginx server config to listen to post 80
+
+# remove default ninx file config
+rm /etc/nginx/sites-enabled/default
+# nginx config to listen to port 80
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# nginx restart
+sudo service nginx restart
