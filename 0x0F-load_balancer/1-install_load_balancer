@@ -5,7 +5,7 @@
 sudo apt-get -y update
 
 # install required packages
-sudo apt-get -y instal software-properties-common
+sudo apt-get -y install software-properties-common
 
 # add HAProxy repository and install HAProxy-2.0
 sudo add-apt repository -y ppa:vbernat/haproxy-2.0
@@ -21,8 +21,8 @@ frontend haproxy_balancer
 
 backend webservers
     balancer roundrobin
-    server web1 check
-    server web2 check
+    server 497461-web-01 54.237.96.219:80 check
+    server 197461-web-02 52.207.85.124:80 check
 "
 
 # add the HAproxy configuration to the haproxy.cfg file

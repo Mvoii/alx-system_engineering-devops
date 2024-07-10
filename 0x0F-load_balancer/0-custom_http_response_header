@@ -2,7 +2,7 @@
 # automates nginx config
 
 sudo apt-get update
-sudo a[t-get -y install nginx
+sudo apt-get -y install nginx
 
 # adding custom headers
 sudo sed -i "/http {/a\    add_header X-Served-By '$HOSTNAME';" /etc/nginx/nginx.conf
