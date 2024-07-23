@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# install ufw & set requirements
+
+# update
+sudo apt-get update
+
+# install ufw
+sudo apt-get install ufw
+
+# enable ufw
+sudo ufw allow ssh
+sudo ufw enable
+
+# set ufw default policies
+sudo ufw default deny incoming
+
+# allow specific ports
+sudo ufw allow 22/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 80/tcp
+
+# enable ufw to start enforcing the rules
+sudo ufw enable
+
+# check teh status
+sudo ufw status
+
