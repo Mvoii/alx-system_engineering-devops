@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# returns teh whoami command under the user passed as an argument
+
+# use sudo to switch to specified user adn whoami to get the username
+sudo -u "$1" whoami
